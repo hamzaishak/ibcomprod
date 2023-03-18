@@ -1,0 +1,985 @@
+<app-header-style></app-header-style>
+
+<div class="webMode">
+    <div class="body">
+        <div class="type">
+            <button (click)="all='true'">Tout (20)</button>
+            <button (click)="btn='interview'" (click)="all='false'">INTERVIEWS (04)</button>
+            <button (click)="btn='spot'" (click)="all='false'">SPOT (04)</button>
+            <button (click)="btn='makingOf'" (click)="all='false'">MAKING OF (08)</button>
+            <button (click)="btn='2d&3d'" (click)="all='false'">ANNIMATION 2d&3d (04)</button>
+        </div>
+
+        <!--all-->
+        <div class="inner" *ngIf="all=='true'" >
+            <div class="item">
+                <div *ngIf="isVideo">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Vermeg.jpg" (click)="OnChange()">
+                </div>
+                <div *ngIf="isVideo" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange()">
+                </div>
+                <div class="video" *ngIf="!isVideo">
+                    <iframe src="https://www.youtube.com/embed/caqVlFsOysc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Vermeg</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo17">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20women's%20day.jpg" (click)="OnChange17()">
+                </div>
+                <div *ngIf="isVideo17" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange17()">
+                </div>
+                <div class="video" *ngIf="!isVideo17">
+                    <iframe src="https://www.youtube.com/embed/8hh4vm-_8wg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>QNB - fête de la femme</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo15">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20World%20Bank.jpg" (click)="OnChange15()">
+                </div>
+                <div *ngIf="isVideo15" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange15()">
+                </div>
+                <div class="video" *ngIf="!isVideo15">
+                    <iframe src="https://www.youtube.com/embed/0dAP4NZweEs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>world bank</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo7">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Smart%20Tunisia.jpg" (click)="OnChange7()">
+                </div>
+                <div *ngIf="isVideo7" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange7()">
+                </div>
+                <div class="video" *ngIf="!isVideo7">
+                    <iframe src="https://www.youtube.com/embed/QBsvZlc1ApY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Smart Tunisia</h4>
+                </div>
+            </div>
+
+            <div class="item " >
+                <div *ngIf="isVideo4">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Topnet.jpg" (click)="OnChange4()">
+                </div>
+                <div *ngIf="isVideo4" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange()" >
+                </div>
+                <div class="video" *ngIf="!isVideo4">
+                    <iframe src="https://www.youtube.com/embed/jbi0p-DlMhc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>20ème anniversaire Topnet</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo14">
+                    <img src="assets/img/capturesPS/IBComProd%20Agence%20de%20communication%20Tunisie%20World%20Cup.jpg" (click)="OnChange14()">
+                </div>
+                <div *ngIf="isVideo14" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange14()">
+                </div>
+                <div class="video" *ngIf="!isVideo14">
+                    <iframe src="https://www.youtube.com/embed/I8HZ-kZ0G5g"></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Visa Monétique-Tunisie</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo11">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Tunis%20Bey.jpg" (click)="OnChange11()">
+                </div>
+                <div *ngIf="isVideo11" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange11()">
+                </div>
+                <div class="video" *ngIf="!isVideo11">
+                    <iframe src="https://www.youtube.com/embed/3SK9Z7ChTyY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Tunis Bay</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo3">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Interview%20Taieb%20Zaher.jpg" (click)="OnChange3()">
+                </div>
+                <div *ngIf="isVideo3" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange3()">
+                </div>
+                <div class="video" *ngIf="!isVideo3">
+                    <iframe src="https://www.youtube.com/embed/ePvydE7fzdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Interview Taieb Zaher</h4>
+                </div>
+            </div>
+
+            <div class="item " >
+                <div *ngIf="isVideo8">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20JOBI.jpg" (click)="OnChange8()">
+                </div>
+                <div *ngIf="isVideo8" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange8()">
+                </div>
+                <div class="video" *ngIf="!isVideo8">
+                    <iframe src="https://www.youtube.com/embed/SM3I4JobIIQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd - JOBI CITY MECHTEL</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo2" >
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Agence%20RP.jpg" (click)="OnChange2()">
+                </div>
+                <div *ngIf="isVideo2" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange2()">
+                </div>
+                <div class="video" *ngIf="!isVideo2">
+                    <iframe src="https://www.youtube.com/embed/a5fFUj93KaA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h5>Ibcomprod - Agence de relation presse en Tunisie</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo6">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Nouvelair.jpg" (click)="OnChange6()">
+                </div>
+                <div *ngIf="isVideo6" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange6()">
+                </div>
+                <div class="video" *ngIf="!isVideo6">
+                    <iframe src="https://www.youtube.com/embed/hhqiyke9xSU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Nouvelair Application mobile</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo9">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Laico.jpg"  (click)="OnChange9()">
+                </div>
+                <div *ngIf="isVideo9" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange9()">
+                </div>
+                <div class="video" *ngIf="!isVideo9">
+                    <iframe src="https://www.youtube.com/embed/S73tgzfNRC8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Laico x IBComProd</h4>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div *ngIf="isVideo12">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20UC.jpg" (click)="OnChange12()">
+                </div>
+                <div *ngIf="isVideo12" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange12()" >
+                </div>
+                <div class="video" *ngIf="!isVideo12">
+                    <iframe src="https://www.youtube.com/embed/ux_8bf-E69c" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Université Centrale</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo13">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20ATS.jpg" (click)="OnChange13()">
+                </div>
+                <div *ngIf="isVideo13" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange13()">
+                </div>
+                <div class="video" *ngIf="!isVideo13">
+                    <iframe src="https://www.youtube.com/embed/vcSPQiisFyg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Spot ATS recrutement</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo10">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Bellini.jpg" (click)="OnChange10()">
+                </div>
+                <div *ngIf="isVideo10" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange10()">
+                </div>
+                <div class="video" *ngIf="!isVideo10">
+                    <iframe src="https://www.youtube.com/embed/YjQGvIMuurc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd - Bellini Gammarth</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo1">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20%20Interview%20Mhadheb%20Rmili.jpg" (click)="OnChange1()">
+                </div>
+                <div *ngIf="isVideo1" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange1()">
+                </div>
+                <div class="video" *ngIf="!isVideo1">
+                    <iframe src="https://www.youtube.com/embed/z8i3w_8xsKo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Interview Mhadheb Rmili</h4>
+                </div>
+            </div>
+
+
+            <div class="item " >
+                <div *ngIf="isVideo16">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20QAD.jpg" (click)="OnChange16()">
+                </div>
+                <span *ngIf="isVideo16" id="playIcon">
+                    <img src="assets/img/icons/play.png" (click)="OnChange16()">
+                </span>
+                <div class="video" *ngIf="!isVideo16">
+                    <iframe src="https://www.youtube.com/embed/hUdaQ2sKEsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Le dernier User Day QAD</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo5">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Spot%202D.jpg" (click)="OnChange5()">
+                </div>
+                <div *ngIf="isVideo5" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange5()">
+                </div>
+                <div class="video" *ngIf="!isVideo5">
+                    <iframe src="https://www.youtube.com/embed/Me1ShZb438c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd- Spot 2D</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo18">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Hammem%20Lif.jpg" (click)="OnChange18()">
+                </div>
+                 <div *ngIf="isVideo18" id="playIcon">
+                     <img src="../../../../../assets/img/icons/play.png" (click)="OnChange18()">
+                 </div>
+                <div class="video" *ngIf="!isVideo18">
+                    <iframe src="https://www.youtube.com/embed/GxyrBxcCyJk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Spot Club Sportif D’Hammam Lif</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo19">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20special%20world%20cup.jpg" (click)="OnChange19()">
+                </div>
+                 <div *ngIf="isVideo19" id="playIcon">
+                     <img src="../../../../../assets/img/icons/play.png" (click)="OnChange19()">
+                 </div>
+                <div class="video" *ngIf="!isVideo19">
+                    <iframe src="https://www.youtube.com/embed/KwW4-meokFo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h5>QNB : Cérémonie "Spécial coupe du monde"</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--interview-->
+        <div class="inner" *ngIf="btn=='interview'">
+            <div class="item">
+                <div *ngIf="isVideo">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Vermeg.jpg" (click)="OnChange()">
+                </div>
+                <div *ngIf="isVideo" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange()">
+                </div>
+                <div class="video" *ngIf="!isVideo">
+                    <iframe src="https://www.youtube.com/embed/caqVlFsOysc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Vermeg</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo1">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20%20Interview%20Mhadheb%20Rmili.jpg" (click)="OnChange1()">
+                </div>
+                <div *ngIf="isVideo1" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange1()">
+                </div>
+                <div class="video" *ngIf="!isVideo1">
+                    <iframe src="https://www.youtube.com/embed/z8i3w_8xsKo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Interview Mhadheb Rmili</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo2" >
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Agence%20RP.jpg" (click)="OnChange2()">
+                </div>
+                <div *ngIf="isVideo2" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange2()">
+                </div>
+                <div class="video" *ngIf="!isVideo2">
+                    <iframe src="https://www.youtube.com/embed/a5fFUj93KaA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h5>Ibcomprod - Agence de relation presse en Tunisie</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo3">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Interview%20Taieb%20Zaher.jpg" (click)="OnChange3()">
+                </div>
+                <div *ngIf="isVideo3" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange3()">
+                </div>
+                <div class="video" *ngIf="!isVideo3">
+                    <iframe src="https://www.youtube.com/embed/ePvydE7fzdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Interview Taieb Zaher</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--spot-->
+        <div class="inner" *ngIf="btn=='spot'">
+            <div class="item">
+                <div *ngIf="isVideo18">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Hammem%20Lif.jpg" (click)="OnChange18()">
+                </div>
+                <div *ngIf="isVideo18" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange18()">
+                </div>
+                <div class="video" *ngIf="!isVideo18">
+                    <iframe src="https://www.youtube.com/embed/GxyrBxcCyJk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Spot Club Sportif D’Hammam Lif</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo9">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Laico.jpg"  (click)="OnChange9()">
+                </div>
+                <div *ngIf="isVideo9" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange9()">
+                </div>
+                <div class="video" *ngIf="!isVideo9">
+                    <iframe src="https://www.youtube.com/embed/S73tgzfNRC8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Laico x IBComProd</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo10">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Bellini.jpg" (click)="OnChange10()">
+                </div>
+                <div *ngIf="isVideo10" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange10()">
+                </div>
+                <div class="video" *ngIf="!isVideo10">
+                    <iframe src="https://www.youtube.com/embed/YjQGvIMuurc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd - Bellini Gammarth</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo13">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20ATS.jpg" (click)="OnChange13()">
+                </div>
+                <div *ngIf="isVideo13" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange13()">
+                </div>
+                <div class="video" *ngIf="!isVideo13">
+                    <iframe src="https://www.youtube.com/embed/vcSPQiisFyg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Spot ATS recrutement</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--makingOf-->
+        <div class="inner" *ngIf="btn=='makingOf'">
+            <div class="item " >
+                <div *ngIf="isVideo8">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20JOBI.jpg" (click)="OnChange8()">
+                </div>
+                <div *ngIf="isVideo8" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange8()">
+                </div>
+                <div class="video" *ngIf="!isVideo8">
+                    <iframe src="https://www.youtube.com/embed/SM3I4JobIIQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd - JOBI CITY MECHTEL</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo11">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Tunis%20Bey.jpg" (click)="OnChange11()">
+                </div>
+                <div *ngIf="isVideo11" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange11()">
+                </div>
+                <div class="video" *ngIf="!isVideo11">
+                    <iframe src="https://www.youtube.com/embed/3SK9Z7ChTyY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Tunis Bay</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo12">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20UC.jpg" (click)="OnChange12()">
+                </div>
+                <div *ngIf="isVideo12" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange12()" >
+                </div>
+                <div class="video" *ngIf="!isVideo12">
+                    <iframe src="https://www.youtube.com/embed/ux_8bf-E69c" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Université Centrale</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo14">
+                    <img src="assets/img/capturesPS/IBComProd%20Agence%20de%20communication%20Tunisie%20World%20Cup.jpg" (click)="OnChange14()">
+                </div>
+                <div *ngIf="isVideo14" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange14()">
+                </div>
+                <div class="video" *ngIf="!isVideo14">
+                    <iframe src="https://www.youtube.com/embed/I8HZ-kZ0G5g"></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Visa Monétique-Tunisie</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo17">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20women's%20day.jpg" (click)="OnChange17()">
+                </div>
+                <div *ngIf="isVideo17" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange17()">
+                </div>
+                <div class="video" *ngIf="!isVideo17">
+                    <iframe src="https://www.youtube.com/embed/8hh4vm-_8wg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>QNB - fête de la femme</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo15">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20World%20Bank.jpg" (click)="OnChange15()">
+                </div>
+                <div *ngIf="isVideo15" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange15()">
+                </div>
+                <div class="video" *ngIf="!isVideo15">
+                    <iframe src="https://www.youtube.com/embed/0dAP4NZweEs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>world bank</h4>
+                </div>
+            </div>
+            <div class="item " >
+                <div *ngIf="isVideo16">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20QAD.jpg" (click)="OnChange16()">
+                </div>
+                <span *ngIf="isVideo16" id="playIcon">
+                    <img src="assets/img/icons/play.png" (click)="OnChange16()">
+                </span>
+                <div class="video" *ngIf="!isVideo16">
+                    <iframe src="https://www.youtube.com/embed/hUdaQ2sKEsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Le dernier User Day QAD</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo19">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20special%20world%20cup.jpg" (click)="OnChange19()">
+                </div>
+                <div *ngIf="isVideo19" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange19()">
+                </div>
+                <div class="video" *ngIf="!isVideo19">
+                    <iframe src="https://www.youtube.com/embed/KwW4-meokFo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h5>QNB : Cérémonie "Spécial coupe du monde"</h5>
+                </div>
+            </div>
+        </div>
+
+        <!--2d&3d-->
+        <div class="inner" *ngIf="btn=='2d&3d'">
+            <div class="item " >
+                <div *ngIf="isVideo4">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Topnet.jpg" (click)="OnChange4()">
+                </div>
+                <div *ngIf="isVideo4" id="playIcon">
+                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange()" >
+                </div>
+                <div class="video" *ngIf="!isVideo4">
+                    <iframe src="https://www.youtube.com/embed/jbi0p-DlMhc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>20ème anniversaire Topnet</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo6">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Nouvelair.jpg" (click)="OnChange6()">
+                </div>
+                <div *ngIf="isVideo6" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange6()">
+                </div>
+                <div class="video" *ngIf="!isVideo6">
+                    <iframe src="https://www.youtube.com/embed/hhqiyke9xSU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Nouvelair Application mobile</h4>
+                </div>
+            </div>
+            <div class="item" >
+                <div *ngIf="isVideo5">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Spot%202D.jpg" (click)="OnChange5()">
+                </div>
+                <div *ngIf="isVideo5" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange5()">
+                </div>
+                <div class="video" *ngIf="!isVideo5">
+                    <iframe src="https://www.youtube.com/embed/Me1ShZb438c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>IBComProd- Spot 2D</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div *ngIf="isVideo7">
+                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Smart%20Tunisia.jpg" (click)="OnChange7()">
+                </div>
+                <div *ngIf="isVideo7" id="playIcon">
+                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange7()">
+                </div>
+                <div class="video" *ngIf="!isVideo7">
+                    <iframe src="https://www.youtube.com/embed/QBsvZlc1ApY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="titre">
+                    <h4>Smart Tunisia</h4>
+                </div>
+            </div>
+        </div>
+</div>
+
+ <!-- Responsive Galery -->
+
+ <div class="mobileMode">
+        <h3  id="first">Interview</h3>
+            <div class="item">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div *ngIf="isVideo">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Vermeg.jpg" (click)="OnChange()">
+                            </div>
+                            <div *ngIf="isVideo" id="playIcon">
+                                <img src="../../../../assets/img/icons/play.png" (click)="OnChange()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo">
+                                <iframe src="https://www.youtube.com/embed/caqVlFsOysc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                                <h5>Vermeg</h5>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo1">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20%20Interview%20Mhadheb%20Rmili.jpg" (click)="OnChange1()">
+                            </div>
+                            <div *ngIf="isVideo1" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange1()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo1">
+                                <iframe src="https://www.youtube.com/embed/z8i3w_8xsKo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Interview Mhadheb Rmili</h5>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo2" >
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Agence%20RP.jpg" (click)="OnChange2()">
+                            </div>
+                            <div *ngIf="isVideo2" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange2()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo2">
+                                <iframe src="https://www.youtube.com/embed/a5fFUj93KaA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Ibcomprod - Agence de relation presse en Tunisie</h5>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo3">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Interview%20Taieb%20Zaher.jpg" (click)="OnChange3()">
+                            </div>
+                            <div *ngIf="isVideo3" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange3()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo3">
+                                <iframe src="https://www.youtube.com/embed/ePvydE7fzdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Interview Taieb Zaher</h5>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        <h3>Spot</h3>
+            <div class="item">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+    
+                        <div class="carousel-item active">
+                            <div *ngIf="isVideo18">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Hammem%20Lif.jpg" (click)="OnChange18()">
+                            </div>
+                            <div *ngIf="isVideo18" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange18()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo18">
+                                <iframe src="https://www.youtube.com/embed/GxyrBxcCyJk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h5>Spot Club Sportif D'Hammam Lif</h5>
+                        </div>
+                    
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo9">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Laico.jpg"  (click)="OnChange9()">
+                            </div>
+                            <div *ngIf="isVideo9" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange9()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo9">
+                                <iframe src="https://www.youtube.com/embed/S73tgzfNRC8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Laico x IBComProd</h5>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo10">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Bellini.jpg" (click)="OnChange10()">
+                            </div>
+                            <div *ngIf="isVideo10" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange10()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo10">
+                                <iframe src="https://www.youtube.com/embed/YjQGvIMuurc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                           
+                            <h5>IBComProd - Bellini Gammarth</h5>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo13">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20ATS.jpg" (click)="OnChange13()">
+                            </div>
+                            <div *ngIf="isVideo13" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange13()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo13">
+                                <iframe src="https://www.youtube.com/embed/vcSPQiisFyg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h5>Spot ATS recrutement</h5>
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        <h3>Making Of</h3>
+            <div class="item">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+        
+                            <div class="carousel-item active">
+                                <div *ngIf="isVideo8">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20JOBI.jpg" (click)="OnChange8()">
+                                </div>
+                                <div *ngIf="isVideo8" id="playIcon">
+                                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange8()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo8">
+                                    <iframe src="https://www.youtube.com/embed/SM3I4JobIIQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                <h5>IBComProd - JOBI CITY MECHTEL</h5>
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo11">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Tunis%20Bey.jpg" (click)="OnChange11()">
+                                </div>
+                                <div *ngIf="isVideo11" id="playIcon">
+                                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange11()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo11">
+                                    <iframe src="https://www.youtube.com/embed/3SK9Z7ChTyY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            
+                                <h5>Tunis Bay</h5>
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo12">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20UC.jpg" (click)="OnChange12()">
+                                </div>
+                                <div *ngIf="isVideo12" id="playIcon">
+                                    <img src="../../../../assets/img/icons/play.png" (click)="OnChange12()" >
+                                </div>
+                                <div class="video" *ngIf="!isVideo12">
+                                    <iframe src="https://www.youtube.com/embed/ux_8bf-E69c" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            
+                                <h5>Université Centrale</h5>
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo14">
+                                    <img src="assets/img/capturesPS/IBComProd%20Agence%20de%20communication%20Tunisie%20World%20Cup.jpg" (click)="OnChange14()">
+                                </div>
+                                <div *ngIf="isVideo14" id="playIcon">
+                                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange14()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo14">
+                                    <iframe src="https://www.youtube.com/embed/I8HZ-kZ0G5g"></iframe>
+                                </div>
+                                    <h5>Visa Monétique-Tunisie</h5>
+                                
+                            </div>
+
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo17">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20women's%20day.jpg" (click)="OnChange17()">
+                                </div>
+                                <div *ngIf="isVideo17" id="playIcon">
+                                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange17()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo17">
+                                    <iframe src="https://www.youtube.com/embed/8hh4vm-_8wg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                    <h5>QNB - fête de la femme</h5>
+                                
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo15">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20World%20Bank.jpg" (click)="OnChange15()">
+                                </div>
+                                <div *ngIf="isVideo15" id="playIcon">
+                                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange15()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo15">
+                                    <iframe src="https://www.youtube.com/embed/0dAP4NZweEs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            
+                                    <h5>world bank</h5>
+                            
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo16">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20QAD.jpg" (click)="OnChange16()">
+                                </div>
+                                <span *ngIf="isVideo16" id="playIcon">
+                                    <img src="assets/img/icons/play.png" (click)="OnChange16()">
+                                </span>
+                                <div class="video" *ngIf="!isVideo16">
+                                    <iframe src="https://www.youtube.com/embed/hUdaQ2sKEsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                    <h5>Le dernier User Day QAD</h5>
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <div *ngIf="isVideo19">
+                                    <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20special%20world%20cup.jpg" (click)="OnChange19()">
+                                </div>
+                                <div *ngIf="isVideo19" id="playIcon">
+                                    <img src="../../../../../assets/img/icons/play.png" (click)="OnChange19()">
+                                </div>
+                                <div class="video" *ngIf="!isVideo19">
+                                    <iframe src="https://www.youtube.com/embed/KwW4-meokFo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                                    <h5>QNB : Cérémonie "Spécial coupe du monde"</h5>
+                            
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            </div>
+
+            <h3>Production 2d&3d</h3>
+            <div class="item">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+    
+                        <div class="carousel-item active">
+                            <div *ngIf="isVideo4">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Topnet.jpg" (click)="OnChange4()">
+                            </div>
+                            <div *ngIf="isVideo4" id="playIcon">
+                                <img src="../../../../assets/img/icons/play.png" (click)="OnChange()" >
+                            </div>
+                            <div class="video" *ngIf="!isVideo4">
+                                <iframe src="https://www.youtube.com/embed/jbi0p-DlMhc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>20ème anniversaire Topnet</h5>
+                            
+                        </div>
+                    
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo6">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Nouvelair.jpg" (click)="OnChange6()">
+                            </div>
+                            <div *ngIf="isVideo6" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange6()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo6">
+                                <iframe src="https://www.youtube.com/embed/hhqiyke9xSU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Nouvelair Application mobile</h5>
+                            
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo5">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Spot%202D.jpg" (click)="OnChange5()">
+                            </div>
+                            <div *ngIf="isVideo5" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange5()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo5">
+                                <iframe src="https://www.youtube.com/embed/Me1ShZb438c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>IBComProd- Spot 2D</h5>
+                            
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div *ngIf="isVideo7">
+                                <img src="../../../../assets/img/galerie/IbCom%20Prod%20Agence%20de%20communication%20Tunisie%20Smart%20Tunisia.jpg" (click)="OnChange7()">
+                            </div>
+                            <div *ngIf="isVideo7" id="playIcon">
+                                <img src="../../../../../assets/img/icons/play.png" (click)="OnChange7()">
+                            </div>
+                            <div class="video" *ngIf="!isVideo7">
+                                <iframe src="https://www.youtube.com/embed/QBsvZlc1ApY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <h5>Smart Tunisia</h5>
+                            
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+</div>
+<app-footer></app-footer>

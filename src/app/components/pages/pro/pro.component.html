@@ -1,0 +1,80 @@
+
+<div class="rightContainer">
+    <p> <span > Créez un compte <br> pour continuer ! <br> </span>
+        Tout ce que vous faites sur ce site <br> sera lié à votre compte.</p>
+</div>
+
+<div class="leftContainer">
+    <div class="titre">
+       <a href="/"> <h1>IbComProd</h1></a>
+    </div>
+
+    <div>
+        <div class="choose">
+            <a routerLink="/candidat"><button class="btn">Candidat</button></a>
+            <a routerLink="/pro"><button class="btn" style="background-color: rgb(209, 5, 5); color:aliceblue">Professionnel</button></a>
+        </div>
+
+        <fieldset>
+            <form>
+
+                <input type="text" id="nom" placeholder="Nom" required minlength="3" maxlength="15">
+                   
+                <input type="text" id="prénom" placeholder="Prénom" required minlength="3" maxlength="15">
+                              
+                <input type="email" id="mail" placeholder="Email" required>
+               
+                <!-- <input type="password" id="mdp" placeholder="Mot De Passe" required minlength="6">
+                -->
+                <input type="text" id="tel" placeholder="Téléphone" required minlength="8" maxlength="8" pattern="int">
+                                  
+                <input type="text" id="adresse" placeholder="Adresse">
+            
+                <!-- <select class="form-select">
+                    <option>Nature de la demande</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Relation Presse">Relation Presse</option>
+                    <option value="Développement Web">Développement Web</option>
+                    <option value="Evénement">Evénementiel</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                    <option value="Production Audiovisuelle"></option>            
+                </select> -->
+                <!-- <label for="">Web Design<input type="checkbox" style="width: 20px; display: -ms-inline-flexbox; margin-top: 15%;"></label>
+                <label for="">Relation Presse <input type="checkbox" style="width: 20px; display: inline;"></label>
+                <label for="">Développement Web <input type="checkbox" style="width: 20px; display: inline;"></label>
+                <label for="">Evénementiel <input type="checkbox" style="width: 20px; display: inline;"></label>
+                <label for="">Marketing Digital <input type="checkbox" style="width: 20px; display: inline;"></label>
+                <label for="">Production Audiovisuelle <input type="checkbox" style="width: 20px; display: inline;"></label> -->
+               <label for="" style="font-size: 20px; color: rgb(209, 5, 5);">Nature de la demande :</label>
+                  <label class="container">Web Design
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Relation Presse
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Développement Web
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Evénementiel
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Marketing Digital
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Production Audiovisuelle
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+            <br><br>
+                <button id="btn" type="submit" >S'inscrire</button>
+        
+            </form>
+        </fieldset>
+
+    </div>
+</div>

@@ -1,0 +1,105 @@
+/*
+Template Name: Material Pro Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+// Variables
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+$bodyfont: 'Poppins', sans-serif;
+$headingfont: 'Poppins', sans-serif;
+
+@import '~@angular/material/theming';
+
+/*Material Theme Colors*/
+
+$primary: mat-palette($mat-grey, 50);
+$accent: mat-palette($mat-grey, 50);
+$warn: mat-palette($mat-grey, 50);
+$theme: mat-light-theme($primary, $accent, $warn);
+$background: map-get($theme, background);
+$foreground: map-get($theme, foreground);
+
+@include mat-core();
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Poppins, sans-serif'
+);
+
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+
+// Default Theme
+@include angular-material-theme($theme);
+
+// Dark Theme
+
+/*Theme Colors*/
+
+$topbar:  #b71c1c;
+$sidebar:#b71c1c;
+$sidebar-white: #b71c1c;
+$sidebar-alt:#b71c1c;
+$bodycolor: #ffffff;
+$headingtext: #b71c1c;
+$bodytext: #b71c1c;
+$sidebar-text:#000000;
+$sidebar-icons:#000000;
+
+$font-16: 16px;
+
+$light-text: #ffffff;
+$themecolor: #b71c1c;
+$themecolor-alt:#b71c1c;
+$themecolor-dark:#b71c1c;
+
+/*bootstrap Color*/
+$danger: #b71c1c;
+$success: #000000;
+$warning: #ffb22b;
+$primary: #b71c1c;
+$info: #b71c1c;
+$inverse: #000000;
+$muted: #ffffff;
+$dark: #000000;
+$light: #ffffff;
+$extra-light: #ffffff;
+$secondary: #000000;
+
+/*Light colors*/
+$light-danger: #ffffff;
+$light-success: #ffffff;
+$light-warning: #ffffff;
+$light-primary: #ffffff;
+$light-info: #ffffff;
+$light-inverse: #ffffff;
+$light-megna: #ffffff;
+
+$danger-dark: #b71c1c;
+$success-dark: #b71c1c;
+$warning-dark: #b71c1c;
+$primary-dark: #b71c1c;
+$info-dark: #b71c1c;
+$red-dark: #b71c1c;
+$inverse-dark: #000000;
+$dark-transparent: rgba(0, 0, 0, 0.05);
+
+/*Normal Color*/
+$white: #ffffff;
+$red: #b71c1c;
+$yellow: #ffffff;
+$purple: #b71c1c;
+$blue: #b71c1c;
+$megna: #b71c1c;
+
+/*Extra Variable*/
+$rgt: right;
+$lft: left;
+$border: rgba(120, 130, 140, 0.13);
+$table-border: #f3f1f1;
+$card-brd: #d7dfe3;
+$dark-text: #000000;
+$radius: 4px;
+$form-brd: #d9d9d9;
+

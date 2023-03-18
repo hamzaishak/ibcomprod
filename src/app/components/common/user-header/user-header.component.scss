@@ -1,0 +1,283 @@
+.header {
+    background-color: #12141b;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+   // position: fixed;
+    width: 13.5%;
+    margin-top: -75px;
+    margin-left: 20px;
+
+}
+
+.social-Media{
+    margin-left: 89%;
+    margin-top: -12px;
+    i{
+        margin-top: 30%;
+        color: #12141b;
+        display: inline-block;
+    }
+
+    span{
+        border-radius: 200px;
+        background-color: white;
+        margin-left: 2px;
+        border-style: solid;
+        a{
+
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+/* .registerForMobile{
+   margin-top: 20%;
+}*/
+
+.param{
+    //width: 150px;
+    margin-left: 95%;
+    margin-top: -50px;
+    a {
+        img {
+            margin-top: 45px;
+            width: auto;
+            filter: grayscale(1) invert(1);
+        }
+    }
+    .dropdown{
+        width: auto;
+        border:none;
+        margin-left: -70%;
+        margin-top: -32px;
+        a{
+            border: none;
+        }
+        img{
+            margin-top:auto;
+           // width: 1000px;
+            //color: white;
+            filter: grayscale(1) invert(1);
+        }
+    }
+
+    .dropdown-menu{
+        background-color: white;
+        li{
+            a {
+                color: black;
+            }
+            a:hover{
+                background-color:#12141b ;
+                color: white;
+            }
+            a:focus{
+                background-color:#12141b ;
+                color: white;
+            }
+        }
+    }
+}
+
+/* a {
+     color: white;
+    // margin-left: 10px;
+     font-size: 12.5px;
+ }*/
+
+.dropdown{
+    width: 3%;
+    margin-left: 85%;
+    margin-top: -2%;
+    button {
+        i{
+            color: white;
+        }
+    }
+
+    .dropdown-menu{
+        background-color: white;
+        li{
+            a {
+                color: black;
+            }
+            a:hover{
+                background-color:#12141b ;
+                color: white;
+            }
+            a:focus{
+                background-color:#12141b ;
+                color: white;
+            }
+        }
+    }
+}
+
+.menu{
+    display: block;
+    margin-left: 30%;
+    margin-top: -7%;
+    width: 40%;
+    .nav-item {
+        a{
+            color: white;
+        }
+
+    }
+    .btn-group {
+        button{
+            color: white;
+        }
+
+        a:hover{
+            background-color: #12141b;
+            color: white;
+        }
+    }
+}
+
+.logoForMobile{
+    display: none;
+}
+
+.paramForMobile{
+    display: none;
+}
+
+.toggle{
+    display: none;
+}
+
+//samsung
+@media only screen and (max-width: 412px){
+
+    .header{
+        height: 50px;
+    }
+    .logo{
+       margin-left: 10px;
+        width: 100%;
+       img{
+           margin-top: 40px;
+           width: 80px;
+       }
+   }
+    .param{
+        display: none;
+    }
+    .paramForMobile{
+        display:inline-block;
+        width: 7%;
+        height: 50%;
+        margin-left: 90%;
+        margin-top: 10px;
+        img{
+            filter: grayscale(1) invert(1);
+            margin-top:0px;
+            width: 50%;
+        }
+
+        .dropdown{
+            margin-left: -20px;
+            width: 100%;
+            .btn{
+
+                img{
+                    filter: grayscale(1) invert(1);
+                    margin-top:0px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+    #notif{
+       width: 40px;
+        margin-left: -50px;
+        button {
+           img{
+               width: 100%;
+           }
+
+        }
+    }
+}
+
+//tablette
+@media only screen and (min-width: 413px) and (max-width: 912px){
+
+    .header{
+        height: 70px;
+    }
+    .logo{
+       margin-left: 10px;
+        width: 100%;
+       img{
+           margin-top: 30px;
+           width: 120px;
+       }
+   }
+    .param{
+        display: none;
+    }
+    .paramForMobile{
+        display:inline-block;
+        width: 7%;
+        height: 50%;
+        margin-left: 90%;
+        margin-top: 10px;
+        img{
+            filter: grayscale(1) invert(1);
+            margin-top:0px;
+            width: 70%;
+        }
+
+        .dropdown{
+            margin-left: -20px;
+            width: 100%;
+            .btn{
+
+                img{
+                    filter: grayscale(1) invert(1);
+                    margin-top:0px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+    #notif{
+       width:100%;;
+        margin-left: -90px;
+        button {
+           img{
+               width: 60px;
+               margin-left: -20px;
+           }
+
+        }
+    }
+
+    .navbar{
+        margin-left: -30%;
+        margin-top: -17.5%;
+        font-size: 13.5px;
+        .btn-group{
+            button{
+                font-size: 13.5px;
+            }
+        }
+    }
+
+    #toggle{
+        display: none;
+    }
+
+}
+
+
+

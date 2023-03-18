@@ -1,0 +1,128 @@
+// .carousel-inner{
+//     //width: 100%;
+//     margin-left: 270px;
+//     cursor:pointer;
+//     border-style:ridge;
+//     border-color: #b9babb2f;
+//     width: 50%;
+//     height: 0%;
+//     .carousel-item{
+//         background-color:  #f6f6f62f;
+       
+//         img{
+//             width: 50%;
+//             height:auto;
+//         }
+
+//         .nom{
+//             display: none;
+//         }
+//     }
+
+//     .carousel-item:hover{
+//         img{
+//             opacity: 0.3;
+//         }
+        
+//         .nom{
+//            // margin-top: -105%;
+//             text-align: center;
+//             font-size: large;
+//             font-weight: 700;
+//             background-color: #12141b;
+//             color: white;
+//             display: block;
+//         }
+//     }
+// }
+
+// .btn{
+//     margin-left: 42.5%;
+//     margin-top: 10px;
+//     background-color: #a80203;
+//     font-weight: 500;
+//     color: aliceblue;
+// }
+
+// .btn:hover{
+//     background-color: white;
+//     color: #a80203;
+//     border-style: solid;
+//     border-color: #a80203;
+//     font-weight: 800;
+// }
+
+// .btn:focus{
+//     background-color: white;
+//     color: #a80203;
+//     border-style: solid;
+//     border-color: #a80203;
+//     font-weight: 800;
+// }
+
+
+.tech-slideshow {
+ 
+    height: 200px;
+   // max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .tech-slideshow > div {
+    
+    height: 200px;
+    width: 2526px;
+    //background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 20s linear infinite;
+    img{
+      cursor: pointer;
+      //  opacity: 0.5;
+        width: 200px;
+        border-style:groove;
+       // background-color: black;
+      }
+
+      img:hover{
+        opacity: 1;
+        width: 200px;
+        border-style:groove;
+       // background-color: black;
+      }
+  }
+ 
+  .tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 2s linear infinite;
+    img{
+        opacity: 1;
+        width: 200px;
+        border-style:groove;
+        background-color: black;
+      }
+  }
+  .tech-slideshow:hover .mover-2 {
+    opacity: 1;
+  }
+  
+  @keyframes moveSlideshow {
+    
+    80% { 
+      transform: translateX(-66.6666%);  
+    }
+   
+  }
+
+ 

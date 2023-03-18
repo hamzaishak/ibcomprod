@@ -1,0 +1,167 @@
+
+.rightContainer{
+    margin-left: 50%;
+    margin-right: auto;
+   
+    background-image: url(../../../../assets/img/icons/black-bg.jpg);
+    height: 870px;
+    width: 670px;
+    display: inline-block;
+    margin-bottom: -10%;
+   
+}
+
+.choose{
+    button{
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: rgb(229, 226, 226);
+        background-color: rgb(229, 226, 226);
+    }
+
+    font-size: medium;
+    font-style:unset;
+    margin-top: 50px;
+    margin-left: 23%;
+
+    button:hover{
+        background-color: rgb(209, 5, 5);
+        color: aliceblue;
+    }
+    button:focus{
+        background-color: rgb(209, 5, 5);
+        color: aliceblue;
+    }
+}
+
+.titre{
+    margin-top: 5%;
+    margin-left: 23%;
+}
+
+.leftContainer{
+    width: 30%;
+    margin-top: -735px;
+    margin-left: 10%;
+    //display: inline-block;
+}
+
+form{
+   
+    input{
+        width: 100%;
+        height: 30px;
+        border-color:bisque;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+    }
+
+
+    input:hover{
+        border-color: black;
+    }
+}
+
+form:hover{
+    background-color: rgb(237, 235, 232);
+    border-radius: 20px;
+}
+
+#btn{
+    width: 100%;
+    background-color: rgb(209, 5, 5);
+    color: beige;
+    border-color: wheat;
+}
+
+fieldset{
+   
+    margin-top: 25px;
+
+}
+
+p{
+   margin-top: 15%;
+    font-size: 40px;
+    font-style: oblique;
+    margin-left: 10%;
+    color: aliceblue;
+    position: fixed;
+}
+
+input:invalid {
+    border: 2px dashed red;
+    
+  }
+  
+input:valid {
+    border: 1px solid green;
+    background-color: rgb(215, 243, 215);
+}
+
+
+@media only screen and (max-width:412px){
+    .leftContainer{
+        display: inline-block;
+        width: 30%;
+        .titre{
+            margin-top: -100%;
+            h1{
+                
+                font-size: 25px;
+                margin-left: -35%;
+            }
+        }
+
+        .choose{
+            margin-left: 7.5%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            button{
+                width: 100%;
+                font-size: 10px;
+            }
+         }
+    }
+
+    .rightContainer{
+        display: inline-block;
+        width: 50%;
+       p{
+        font-size: 30px;
+        margin-top: 50%;
+        margin-left: 15px;
+       }
+    }
+
+}
+
+@media only screen and (min-width:413px) and (max-width:912px) {
+    .leftContainer{
+        .titre{
+            h1{
+                margin-left: -35%;
+                font-size: 50px;
+            }
+        }
+
+        label{
+            font-size: 2px;
+         }
+        .choose{
+           margin-left: 7.5%;
+           margin-top: 40px;
+           margin-bottom: 40px;
+        }
+    }
+
+    .rightContainer{
+        p{
+            font-size: 30px;
+            margin-top: 20%;
+            margin-left: 2.5%;
+        }
+    }
+    
+}

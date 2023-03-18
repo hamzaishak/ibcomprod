@@ -1,0 +1,136 @@
+<!-- <div id="logo">
+    <img style="width: 1000px;" src="../../../../assets/img/logo1ibcom.png" alt="IbComProd Logo">
+</div>
+    
+<div class="container">
+
+        <div class="simpleUser">
+            <a href="/user"> 
+                <img id="userImg" src="../../../../assets/img/ib-com-user-user.png">
+            </a>
+                <br>
+            <a href="/user" id="link">Candidat</a>
+        </div>
+<br><br><br>
+        <div class="company">
+            <a href="/company">
+                <img id="companyImg" src="../../../../assets/img/ib-com-prod-company (2).png" alt="">
+            </a>
+                <br>
+            <a href='/company'id="companyLink">Professionnel</a>
+        </div>
+       
+</div>
+
+<div id="bg">
+    
+</div> -->
+
+
+    
+<div class="rightContainer">
+   <p> Remplir le formulaire <br> pour assurer votre candidature</p>
+</div>
+
+<div class="leftContainer">
+    <div class="titre">
+      <a href="/"> <h1>IbComProd</h1> </a>
+    </div>
+
+    <div>
+        <div class="choose">
+            <a routerLink="/candidat"><button class="btn" style="background-color: rgb(209, 5, 5); color:aliceblue">
+                Candidat</button></a>
+            <a href="/pro"><button class="btn">Professionnel</button></a>
+        </div>
+
+        <fieldset>
+            <form>
+
+                <input type="text" placeholder="Nom" required minlength="3" maxlength="15">
+                   
+                <input  type="text" placeholder="Prénom"  required minlength="3" maxlength="15">
+                              
+                <input  type="email" placeholder="Email" required>
+               
+                <!-- <input type="password" placeholder="Mot De Passe"  required minlength="6"> -->
+               
+                <input type="tel" placeholder="Téléphone"  required minlength="8" maxlength="8">
+                                  
+                <input type="text" placeholder="Adresse"  required minlength="10" maxlength="30">
+               
+                <!-- <div class="form-group">
+                   <select class="form-select" aria-label="Default select example" aria-required="true">
+                       <li><option value=""> value="">Gouvernerat de</li>
+                       <li><option value=""> value="Ariena">Ariena</li>
+                       <li><option value=""> value="Béja">Béja</li>
+                       <li><option value=""> value="Ben Arous">Ben Arous</li>
+                       <li><option value=""> value="Bizerte">Bizerte</li>
+                       <li><option value=""> value="Gabés">Gabés</li>
+                       <li><option value=""> value="Gafsa">Gafsa</li>
+                       <li><option value=""> value="Jendouba">Jendouba</li>
+                       <li><option value=""> value="kairouen">kairouen</li>
+                       <li><option value=""> value="Kassrine">Kassrine</li>
+                       <li><option value=""> value="Kébili">Kébili</li>
+                       <li><option value=""> value="Kef">Kef</li>
+                       <li><option value=""> value="Mahdia">Mahdia</li>
+                       <li><option value=""> value="Manouba">Manouba</li>
+                       <li><option value=""> value="Mednine">Mednine</li>
+                       <li><option value=""> value="Monastir">Monastir</li>
+                       <li><option value=""> value="Nabeul">Nabeul</li>
+                       <li><option value=""> value="Sfax">Sfax</li>
+                       <li><option value=""> value="Sidi Bouzid">Sidi Bouzid</li>
+                       <li><option value=""> value="Siliena">Siliena</li>
+                       <li><option value=""> value="Sousse">Sousse</li>
+                       <li><option value=""> value="Tataouine">Tataouine</li>
+                       <li><option value=""> value="Tozeur">Tozeur</li>
+                       <li><option value=""> value="Tunis">Tunis</li>
+                       <li><option value=""> value="Zaghouen">Zaghouen</li>
+                   </select>
+               </div>  -->
+               
+                <input type="text" placeholder="Spécialité" required>
+
+                <input type="text" placeholder="Niveau d'étude" required>
+
+                <!-- <input type="text" id="diplome" formControlName="diplome" placeholder="Diplôme"> -->
+
+                <!-- <select name="diplome" id="diplome">
+
+                        <li><option value=""> value="0">Diplôme</li>
+                        <li><option value=""> value="BTP">BTP</li>
+                        <li><option value=""> value="BTP/BTS">BTP/BTS</li>
+                        <li><option value=""> value="Licence">Licence</li>
+                        <li><option value=""> value="Master">Master</li>
+                        <li><option value=""> value="Doctorat">Doctorat</li>
+                       
+                   </select> -->
+
+                <div class="mb-3">
+                        <select class="form-select" required aria-label="select example" placeholder="Diplôme">
+                          <option value="empty">Diplôme</option>
+                          <option value="BTP">BTP</option>
+                          <option value="BTP/BTS">BTP/BTS</option>
+                          <option value="Licence">Licence</option>
+                          <option value="Master">Master</option>
+                          <option value="Doctorat">Doctorat</option>
+                          <option value="Ing">Ingénieur(e)</option>
+                        </select>
+                        <!-- <div class="invalid-feedback">Example invalid select feedback</div> -->
+                </div>
+                  
+                <label>CV</label>
+                <input type="file"  id="cv" required >
+                    <br>
+                <label>Lettre de motivation</label>
+                <input type="file"  id="LDM" required >
+               
+                <br><br>
+            <button id="btn" type="submit">Postuler</button>
+               
+           </form> 
+       </fieldset>
+
+    </div>
+
+</div>
