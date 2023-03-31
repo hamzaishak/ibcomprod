@@ -110,11 +110,25 @@
     }
 }
 .page-title-area{
-    background-image: url(../../../../assets/img/bg/womanWorks.jpg);
+  //  background-image: url(../../../../assets/img/bg/womanWorks.jpg);
     background-size: 100% 100%;
     height: 520px;
     width: 100%;
-
+    background-color:  rgb(17, 16, 16);
+    h2{
+        color: #f1f2f6;
+        margin-top: 50px;
+        font-weight: 700;
+       // font-size: 50px;
+       text-align: center;
+    }
+    p{
+        font-size: 22.5px;
+        margin-top: 5%;
+        //margin-left: 95px;
+        text-align: center;
+        color: rgb(221, 217, 217);
+    }
     .page-title-content{
         margin-top: 30%;
     }
@@ -129,7 +143,7 @@
     }
 }
 .courses-details-desc1 {
-    margin-top: -10px;
+    margin-top: -70px;
     margin-left: 2.5%;
     width: 55%;
     display: inline-block;
@@ -223,22 +237,62 @@
 }
 
 .shorting{
-    margin-top: 30px;
+    margin-top: -150px;
+    width: 1250px;
+    margin-left: 30px;
     margin-bottom: 5%;
+    color: white;
+    .courses-title{
+        margin-bottom: 50px;
+        h2{
+           
+            color: white;
+        }
+        
+    }
+
+    .courses-content{
+        margin-right: -30px;
+        width: auto;
+        
+        h3{
+            color: #878686;
+        }
+    }
+}
+.courses-content{
+    div{       
+        color: white;       
+    }
+    h3{
+        color: white;
+    }
+    .why-you-learn{
+        ul{
+            div{
+                li{
+                    span{ color: white;} 
+                 }
+            }
+        }
+    }
+    
+   
+    
 }
 .courses-sidebar-information {
     margin-bottom: 35px;
-   margin-top: -50px;
+   margin-top: -20px;
     ul {
         padding-left: 0;
         margin-bottom: 0;
         list-style-type: none;
-        background-color: var(--whiteColor);
+       // background-color: var(--whiteColor);
         box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
         margin-top: 7%;
         li {
             border-bottom: 1px dashed #eeeeee;
-            color: var(--blackColor);
+            color: var(--whiteColor);
             overflow: hidden;
             text-align: right;
             padding: 12px 15px;    
@@ -261,6 +315,10 @@
                     font-size: 20px;
                     margin-right: 2px;
                 }
+            }
+            img{
+                filter: invert(100%);
+                -webkit-filter: invert(100%);
             }
             &:hover {
                 span {
@@ -477,7 +535,7 @@
     top: 70%;
     margin-left: 85.7%;
     display: block;
-    margin-bottom: 40%;
+    margin-bottom: 0%;
     margin-top: -7%;
     font-weight: bold;
 }
@@ -801,9 +859,15 @@ button {
       left: 100%;
     }
   }
-.packIcons{
-    margin-left: 35%;
-}
+  .packIcons{
+    margin-top: 25px;
+    margin-left: 20%;
+    img{
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+    }
+
+  }
 
 
 @media only screen and (max-width: 767px) {
@@ -984,7 +1048,7 @@ button {
 
 }
 .contact-form {
-    background-color: var(--whiteColor);
+    background-color: rgb(17, 16, 16);
     box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
     border-radius: 5px;
     padding: 50px;
@@ -1019,27 +1083,30 @@ button {
         }
     }
     .default-btn {
-        background-color: black;
+        background-color: white;
         border-radius: 30px;
         margin-top: 10px;
-        border-color: black;
+        border-color: white;
         box-shadow: 0 5px 28.5px 1.5px rgba(0, 0, 0, 0.2);
         button{
-            color: white;
+            color: rgb(0, 0, 0);
             font-weight: 700;
             font-size: 16.5px;
+        }
+        i{
+            color: #000000;
         }
 
         &:hover, &:focus {
             box-shadow: 0 5px 28.5px 1.5px rgba(14, 181, 130, 0.2);
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
 
             button{
-                color: black;
+                color: rgb(255, 255, 255);
             }
 
             i{
-                color: black;
+                color: rgb(255, 255, 255);
             }
         }
     }
