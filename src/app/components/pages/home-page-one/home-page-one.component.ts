@@ -34,3 +34,4 @@ export class HomePageOneComponent implements OnInit {
 //   shand[myIndex-1].style.display = "block";  
 //   setTimeout(carousel, 9000);    
 // }
+
