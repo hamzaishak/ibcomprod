@@ -2,6 +2,43 @@
     <app-header-style></app-header-style>
 </div>
 
+<div class="mobileMenu">
+    <input type='checkbox' id='mmeennuu'>
+    <label class='menu' for='mmeennuu'>
+
+    <div class='barry'>
+        <span class='bar'></span>
+        <span class='bar'></span>
+        <span class='bar'></span>
+        <span class='bar'></span>
+        <span class='bar'></span>
+    </div>
+	
+    <ul>
+        <li><a id='home' href='/'>Acceuil</a></li>
+        <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                Nos Services
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/relations-presse-et-publiques">Relations Presse et Publiques</a></li>
+                <li><a class="dropdown-item" href="/production-audiovisuelle">Production Audiovisuelle</a></li>
+                <li><a class="dropdown-item" href="/marketing-digital">Marketing Digital</a></li>
+                <li><a class="dropdown-item" href="/événementiel">ÉVÉNEMENTIEL</a></li>
+                <li><a class="dropdown-item" href="/développement-web">Développement Web</a></li>
+                <li><a class="dropdown-item" href="/design-graphique">Design Graphique</a></li>
+            </ul>
+        </div>
+        <!-- <li><a id='about' href='#about'>Nos Services</a></li> -->
+        <li><a id='contact' href='/nos-clients'>Nos Clients</a></li>
+        <li><a id='link' href='/blog-style-2'>Blog</a></li>
+        <li><a id='link' href='/contact'>Contact</a></li>
+    </ul>
+
+    </label>
+</div>
+
 <div style="overflow-x: hidden;">
     <div id="banner">
         <app-homeone-main-banner></app-homeone-main-banner>
