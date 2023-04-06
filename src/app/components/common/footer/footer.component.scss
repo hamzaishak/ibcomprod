@@ -1,5 +1,7 @@
 .footer-area {
-    background-color: #12141b;
+   
+   background-color:   rgb(17, 16, 16);
+   // background-color: #12141b;
     padding-top: 100px;
 }
 .single-footer-widget {
@@ -188,7 +190,8 @@
 .footer-bottom-area {
     margin-top: 70px;
     text-align: center;
-    background-color: #090a0e;
+   // background-color: #090a0e;
+   background-color: #828181;
     padding: {
         top: 30px;
         bottom: 30px;
@@ -197,7 +200,8 @@
         margin-bottom: 18px;
     }
     p {
-        color: #cccccc;
+       // color: #cccccc;
+       color:  rgb(17, 16, 16);
         font-size: 14px;
 
         i {
@@ -207,7 +211,8 @@
         a {
             display: inline-block;
             font-weight: 600;
-            color: var(--whiteColor);
+            //color: var(--whiteColor);
+            color: #ffffff;
 
             &:hover, &:focus {
                 color: var(--mainColor);
