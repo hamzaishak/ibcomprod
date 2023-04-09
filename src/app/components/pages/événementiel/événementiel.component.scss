@@ -114,8 +114,10 @@
     height: 520px;
     width: 100%;
     background-color:  rgb(17, 16, 16);
+    
 
     h2{
+        position: absolute;
         color: #f1f2f6;
         margin-top: 50px;
         font-weight: 700;
@@ -123,8 +125,9 @@
        text-align: center;
     }
     p{
+        position: absolute;
         font-size: 22.5px;
-        margin-top: 5%;
+        margin-top: 7.5%;
         //margin-left: 95px;
         text-align: center;
         color: rgb(221, 217, 217);
