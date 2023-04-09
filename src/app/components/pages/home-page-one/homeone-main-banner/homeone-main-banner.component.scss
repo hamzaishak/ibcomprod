@@ -99,8 +99,14 @@
 }
 .gallery-area{
    // position: right;
-    margin-top: -13.5%;
+    //margin-top: -10.5%;
+    margin-top: -0px;
     margin-left: 2.8%;
+}
+.head{
+    margin-top: -105px;
+    margin-left: 30px;
+    position: absolute;
 }
 
 .container{
@@ -109,13 +115,14 @@
 }
 .row{
    width: 97%;
-   margin-top: 8%;
+  // margin-top: 8%;
    
 }
 
 #video-background {
    // position: fixed;
     top: 0;
+    //margin-top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -135,7 +142,7 @@
     height: 100%;
     pointer-events: none;
   }
-  
+ 
 
 // .bg{
 //     margin-top: 100px;
@@ -155,32 +162,41 @@
     width: 100%;
     height: 647.5px;
     display: inline-block;
-    background-color: black;
+    //background-color: black;
     .logo{
         margin-left: 70px;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-bottom: 20px;
+        
         img{
-            width: 6.5%;
+            width:70px;
         }
         
     }
     //shutter stock
     .menu{
-        margin-left: 30%;
-        margin-top: -6.5%;
+        margin-left: 300px;
+        margin-top: -10.5%;
         width: 40%;
+        //display: inline-flex;
+        
         .nav-item {
+            width: max-content;
+            
             a{
+                display: inline;
                 color: white;
             }
 
         }
         .btn-group {
+            margin-top: -7.5px;
+           
             button{
                 color: white;
             
             }
+
 
             a:hover{
                 background-color: #12141b;
@@ -190,8 +206,8 @@
     }
     .dropdown{
         width: 13%;
-            margin-left: 95%;
-            margin-top: -3.5%;
+            margin-left: 900px;
+            margin-top: -5.5%;
             button {
                 i{
                     color: white;
