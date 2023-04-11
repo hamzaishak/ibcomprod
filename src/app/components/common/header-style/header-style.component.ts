@@ -8,3 +8,10 @@ import { Component } from '@angular/core';
 export class HeaderStyleComponent {
 
 }
+
+const nav=document.querySelector('.header');
+window.addEventListener('scroll',()=>{
+  if (window.screenY > 100){
+    nav.classList.add('scroll');
+  }
+});
