@@ -4,7 +4,7 @@
 // }
 .courses-details-header {
     margin-bottom: 30px;
-    margin-top: -46%;
+    margin-top: 0px;
     .courses-title {
         margin-top: -45px;
         h2 {
@@ -124,6 +124,7 @@
 
     
     h2{
+        position: absolute;
         color: #f1f2f6;
         margin-top: 50px;
         font-weight: 700;
@@ -131,8 +132,9 @@
        text-align: center;
     }
     p{
+        position: absolute;
         font-size: 22.5px;
-        margin-top: 5%;
+        margin-top: 100px;
         //margin-left: 95px;
         text-align: center;
         color: rgb(221, 217, 217);
@@ -142,7 +144,7 @@
 }
 .courses-details-image {
     border-radius: 5px;
-
+    margin-top: 0px;
     iframe{
         width: 100%;
         border-radius: 5px;
@@ -526,7 +528,19 @@
     margin-top: -7%;
     font-weight: bold;
 }
-
+.video-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .video-foreground iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
 
 
 @import url('https://fonts.googleapis.com/css?family=Mukta:700');
