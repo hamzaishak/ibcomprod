@@ -58,7 +58,7 @@
     img{
         border-radius: 5px;
         width:318px;
-        height:170px;
+        height:160px;
         cursor: zoom-in;
         //transition: var(--transition);
         opacity: 0;
@@ -100,12 +100,12 @@
 .gallery-area{
    // position: right;
     //margin-top: -10.5%;
-    margin-top: -0px;
+    margin-top: -20px;
     margin-left: 2.8%;
 }
 .head{
     margin-top: -105px;
-    margin-left: 30px;
+    margin-left: 10px;
     position: absolute;
 }
 
@@ -121,8 +121,8 @@
 
 #video-background {
    // position: fixed;
-    top: 0;
-    //margin-top: 50px;
+   // top: 0;
+    //margin-top: -20px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -165,7 +165,7 @@
     //background-color: black;
     .logo{
         margin-left: 70px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 20px;
         
         img{
@@ -175,8 +175,8 @@
     }
     //shutter stock
     .menu{
-        margin-left: 300px;
-        margin-top: -10.5%;
+        margin-left: 400px;
+        margin-top:-80px;
         width: 40%;
         //display: inline-flex;
         
@@ -206,8 +206,8 @@
     }
     .dropdown{
         width: 13%;
-            margin-left: 900px;
-            margin-top: -5.5%;
+            margin-left: 1200px;
+            margin-top: -4.2%;
             button {
                 i{
                     color: white;
