@@ -1,17 +1,26 @@
 .header {
    // background-color: #12141b;
-   background-color:   rgb(17, 16, 16);;
+  // background-color:   rgb(17, 16, 16);
+  //background: transparent;
     height: 100px;
+    //overflow-y:scroll;
     //opacity: 0.4;
     li{
         opacity: 2;
     }
 }
+
+
 .header:hover{
     opacity: 1;
 }
 .header:focus{
     opacity: 1;
+}
+
+.header.scroll{
+   
+    background-color: beige!important;
 }
 
 .logo{
