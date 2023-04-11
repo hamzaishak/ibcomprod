@@ -120,15 +120,19 @@
         margin-top: 30%;
     }  
     h2{
+        text-align: center;
+        position: absolute;
         color: #f1f2f6;
         margin-top: 50px;
+        margin-left: 300px;
         font-weight: 700;
        // font-size: 50px;
-       text-align: center;
+       
     }
     p{
+        position: absolute;
         font-size: 22.5px;
-        margin-top: 5%;
+        margin-top: 100px;
         //margin-left: 95px;
         text-align: center;
         color: rgb(221, 217, 217);
@@ -137,7 +141,7 @@
 
 .courses-details-image {
     border-radius: 5px;
-    margin-top: -500px;
+    margin-top: 70px;
     iframe {
         width: 100%;
         border-radius: 5px;
@@ -211,6 +215,19 @@
         }
     }
 }
+.video-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .video-foreground iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
 @keyframes slidein {
     from {
       margin-left: -100%;
@@ -463,7 +480,7 @@ button {
 }
 .courses-sidebar-information {
     margin-bottom: 40px;
-    margin-top: -500px;
+    margin-top: 150px;
     ul {
         padding-left: 0;
         margin-bottom: 0;
