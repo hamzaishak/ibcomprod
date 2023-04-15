@@ -112,21 +112,23 @@
 .page-title-area{
   //  background-image: url(../../../../assets/img/bg/womanWorks.jpg);
     background-size: 100% 100%;
-    height: 520px;
+    overflow: hidden;
+    height: 600px;
     width: 100%;
-    background-color:  rgb(17, 16, 16);
+    //background-color:  rgb(17, 16, 16);
+   // background: transparent;
     h2{
         position:absolute;
         color: #f1f2f6;
-        margin-top: 50px;
+        margin-top: 300px;
         font-weight: 700;
        // font-size: 50px;
        text-align: center;
     }
     p{
         position:absolute;
-        font-size: 22.5px;
-        margin-top: 100px;
+        font-size: 20px;
+        margin-top: 350px;
         //margin-left: 95px;
         text-align: center;
         color: rgb(221, 217, 217);
@@ -140,7 +142,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
+    height: 400px;
+    scale: 2;
   }
   
   .video-foreground iframe {
@@ -151,7 +154,7 @@
 
 .courses-details-image {
     border-radius: 5px;
-    margin-top: 500px;
+    margin-top: 400px;
     iframe {
         width: 100%;
         border-radius: 5px;
@@ -159,7 +162,7 @@
     }
 }
 .courses-details-desc1 {
-    margin-top: -70px;
+    margin-top: -30px;
     margin-left: 2.5%;
     width: 55%;
     display: inline-block;
@@ -177,7 +180,7 @@
     }
     
     p {
-        
+        font-size: 16px;
         color: #999595;
         strong {
             color: white;
@@ -206,7 +209,7 @@
     }
     
     p {
-        
+        font-size: 16px; 
         color: #999595;
         strong {
             color: white;
@@ -298,7 +301,7 @@
 }
 .courses-sidebar-information {
     margin-bottom: 35px;
-   margin-top: 550px;
+   margin-top: 450px;
     ul {
         padding-left: 0;
         margin-bottom: 0;
