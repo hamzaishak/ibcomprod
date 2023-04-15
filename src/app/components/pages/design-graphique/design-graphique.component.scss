@@ -128,10 +128,12 @@
    // background-image: url(../../../../assets/img/bg/design.jpg);
     background-size: 100% 100%;
     height: 520px;
-    width: 1347.5px;
+    width: 100%;
     background-color:  rgb(17, 16, 16);
+    overflow: hidden;
 
     h2{
+        position: absolute;
         color: #f1f2f6;
         margin-top: 50px;
         font-weight: 700;
@@ -139,8 +141,9 @@
        text-align: center;
     }
     p{
+        position: absolute;
         font-size: 22.5px;
-        margin-top: 5%;
+        margin-top: 100px;
         //margin-left: 95px;
         text-align: center;
         color: rgb(221, 217, 217);
@@ -150,10 +153,24 @@
         margin-top: 30%;
     }
 }
-.courses-details-image {
+.video-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 630px;
+  }
+  
+.video-foreground iframe {
+    width: 100%;
+    height: 615px;
+    pointer-events: none;
+  }
+
+  .courses-details-image {
     border-radius: 5px;
     margin-bottom: 20px;
-    margin-top: -500px;
+    margin-top: 150px;
     iframe {
         width: 100%;
         border-radius: 5px;
@@ -162,7 +179,7 @@
 .courses-details-desc{  
     width: 38%;
     display: inline-block;
-    margin-top: 300px;
+    //margin-top: 1000px;
     h3 {
         margin-top: -100px;
         margin-bottom: 15px;       
@@ -171,13 +188,12 @@
             size: 22px;
             weight: 600;
         }
-        &:not(first-child) {
-            margin-top: 10px;
-        }
+        
     }
 
     p {
-        color: #727695;
+        font-size: 16px;
+        color: #999595;
         strong {
             color: white;
         }
@@ -188,7 +204,7 @@
     }
 }
 .courses-details-desc2{
-    margin-top: -120px;
+    margin-top: -130px;
     margin-bottom: 0px;
    h3 {
     margin-bottom: 15px;
@@ -213,7 +229,7 @@
     display:inline-block;
     margin-left: 102px;  
     width: 45%;
-    margin-top: 100px;
+    margin-top: 230px;
     margin-bottom: 100px;
    img{
     width:100%;
@@ -296,7 +312,7 @@
 }
 .courses-sidebar-information {
     margin-bottom: 35px;
-    margin-top: -500px;
+    margin-top: 200px;
     width: 120%;
     ul {
         padding-left: 0;
@@ -803,7 +819,9 @@ button {
                 }
             }
         }
+      
     }
+
     .courses-review-comments {
         .user-review {
             padding: 20px 0 20px 0;
@@ -1010,7 +1028,7 @@ button {
 
 }
 .courses-details-desc {
-    margin-top: -135px;
+    margin-top: 0px;
 
     h3 {
         margin-bottom: 15px;
