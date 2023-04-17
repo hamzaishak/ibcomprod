@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-style.component.scss']
 })
 export class HeaderStyleComponent {
-
 }
 
-const nav=document.querySelector('.header');
-window.addEventListener('scroll',()=>{
-  if (window.screenY > 100){
-    nav.classList.add('scroll');
+document.addEventListener('scroll', ()=>{
+  const header=document.querySelector('header');
+  if(window.scrollY>0){
+    header.classList.add('scrolled');
+  } else{
+    header.classList.remove('scrolled');
   }
-});
+})
