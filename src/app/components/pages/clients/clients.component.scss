@@ -193,6 +193,7 @@
   }
 
   .liste{
+    margin-top: -40px;
     .cadre{
       width: 175px;
       display: inline-block;
@@ -210,7 +211,7 @@
        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         width: 175px;
-        height: 175px;
+        height: auto;
         margin-top: auto;
         margin-bottom: auto;
         display: inline-block;
