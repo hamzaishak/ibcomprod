@@ -542,13 +542,11 @@
     margin-top: -7%;
     font-weight: bold;
 }
-
-
 @import url('https://fonts.googleapis.com/css?family=Mukta:700');
 
 $bg: #f3f8fa;
 $white: #fff;
-$black: #282936;
+$black: #6f6f71;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -781,8 +779,6 @@ button {
       margin: 20px auto;
     }
   }
-  
-
 
 @media only screen and (max-width: 912px) {
     .galeryBtn{
@@ -1472,7 +1468,6 @@ button {
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
