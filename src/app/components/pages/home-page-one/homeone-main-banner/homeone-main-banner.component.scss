@@ -126,7 +126,7 @@
     //margin-top: -20px;
     left: 0;
     width: 100%;
-    height: 100%;
+    //height: 100%;
     z-index: -1;
   }
   
@@ -135,7 +135,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 400px;
+    scale: 2;
   }
   
   .video-foreground iframe {
@@ -161,7 +162,7 @@
     
     background-size:  100% 647.5px;
     width: 100%;
-    height: 647.5px;
+    height: 447.5px;
     display: inline-block;
     //background-color: black;
     .logo{
