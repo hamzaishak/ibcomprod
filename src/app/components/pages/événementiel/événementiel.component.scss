@@ -118,7 +118,8 @@
 
     h2{
         position: absolute;
-        color: #f1f2f6;
+        //color: #f1f2f6;
+        color: black;
         margin-top: 300px;
         font-weight: 700;
        // font-size: 50px;
@@ -130,7 +131,8 @@
         margin-top: 350px;
         //margin-left: 95px;
         text-align: center;
-        color: rgb(221, 217, 217);
+       // color: rgb(221, 217, 217);
+       color:rgb(0, 0, 0);
     }
     .page-title-content{
         margin-top: 30%;
@@ -146,35 +148,19 @@
         color: white;
     }
     width: 5%;
-    
     position: fixed;
     top: 70%;
     margin-left: 85.7%;
     display: block;
-    margin-bottom: 0%;
-    margin-top: -7%;
+    margin-bottom: 70%;
+    margin-top: -0px;
     font-weight: bold;
 }
-.video-foreground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 430px;
-    scale: 2;
-  }
-  
-  .video-foreground iframe {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-
 @import url('https://fonts.googleapis.com/css?family=Mukta:700');
 
 $bg: #f3f8fa;
 $white: #fff;
-$black: #282936;
+$black: #6f6f71;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -286,6 +272,20 @@ button {
   grid-template-areas: ". main main ." ". main main .";
   }
 }
+.video-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+    scale: 2;
+  }
+  
+  .video-foreground iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
 .courses-details-area{
     margin-top: 420px;
 }
@@ -1257,6 +1257,13 @@ button {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1275px) {
 
+}
+.sub-title{
+   strong{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+   }
 }
 .contact-form {
    // background-color: var(--whiteColor);
