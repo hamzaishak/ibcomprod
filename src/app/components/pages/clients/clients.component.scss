@@ -191,3 +191,32 @@
   .slides{
     margin-left: -0px;
   }
+
+  .liste{
+    .cadre{
+      width: 175px;
+      display: inline-block;
+
+      .titre{
+        display: none;
+      }
+    }
+    .cadre:hover{
+     
+      img{
+        display: none;
+      }
+      .titre{
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        width: 175px;
+        height: 175px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+    }
+  }
