@@ -16,3 +16,11 @@ document.addEventListener('scroll', ()=>{
     header.classList.remove('scrolled');
   }
 })
+
+var scrolled=false;
+document.addEventListener('scroll',()=>{
+  if (window.scrollY>0) 
+  {
+    scrolled=true;}
+    
+  })
