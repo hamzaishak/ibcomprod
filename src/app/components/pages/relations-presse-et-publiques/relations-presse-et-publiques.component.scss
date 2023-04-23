@@ -166,7 +166,7 @@
 }
 .courses-details-desc1 {
     
-    margin-top: 65px;
+    margin-top: 0px;
     width: 50%;
     margin-left: 50%;
     display: block;
@@ -193,7 +193,8 @@
         animation-name: slidein;
     } 
 }
-.courses-details-area{margin-top: 5%;
+.courses-details-area{
+    margin-top: -50px;
     margin-bottom: 5%;
 }
 @keyframes slidein {
