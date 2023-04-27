@@ -10,18 +10,35 @@
     width: 1348px;
     background-color: rgb(17, 16, 16);
     .page-title-content{
-        margin-top: 30%;
+        margin-top: 0%;
     }
-    h2 { 
-        margin-top: -5%;
-        margin-bottom: 2%;
+    h2{ 
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: 15px;
         margin-left: auto;
         margin-right: auto;
-        
+        color: #999595;
         font: {
-            size: 29px;
-            weight: 700;
+            size: 19px;
+            weight: 300;
         };
+    }
+    h1{
+        color: #f3f8fa;
+        text-align: center;
+        font-weight:800;
+        font-size: 75px;
+        
+        margin-bottom: 5%;
+    }
+    p{
+        font-size: 17.5px;
+        color: white;
+        margin-left: 250px;
+        margin-right: 200px;
+        margin-top: -10px;
+        font-weight: 100;
     }
 }
 .contact-info-area {
