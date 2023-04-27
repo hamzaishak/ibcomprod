@@ -1,4 +1,4 @@
-.header {
+.header{
    // background-color: #12141b;
   // background-color:   rgb(17, 16, 16);
   //background: transparent;
@@ -9,8 +9,14 @@
         opacity: 2;
     }
 }
+.header:hover{
+    background-color:   rgb(17, 16, 16);
+}
 
 
+.changedBg{
+    background-color: #12141b;
+}
 .header:hover{
     opacity: 1;
 }
