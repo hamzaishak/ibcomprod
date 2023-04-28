@@ -14,17 +14,17 @@ export class ProductionAudiovisuelleComponent implements OnInit {
 
 }
 
-$(document).ready(function() {
-  $('.has-animation').each(function(index) {
-    $(this).delay($(this).data('delay')).queue(function(){
-      $(this).addClass('animate-in');
-    });
-  });
-});
+// $(document).ready(function() {
+//   $('.has-animation').each(function(index) {
+//     $(this).delay($(this).data('delay')).queue(function(){
+//       $(this).addClass('animate-in');
+//     });
+//   });
+// });
 
-/* Demo purposes only */
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+// /* Demo purposes only */
+// $(".hover").mouseleave(
+//   function () {
+//     $(this).removeClass("hover");
+//   }
+// );
