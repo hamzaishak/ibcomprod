@@ -11,5 +11,5 @@ export class BlogRightSidebarPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public titre=document.querySelector('h3');
 }
