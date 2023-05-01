@@ -315,7 +315,6 @@
 }
 .comments-area {
     margin-top: 30px;
-
     .comments-title {
         margin: {
             bottom: 30px;
@@ -538,13 +537,13 @@
     }
 }
 .page-title-area{
-    background-image: url(../../../../assets/img/blogs.png);
-    background-size: 100% 100%;
-    height: 520px;
-    width: 1348px;
-
+   // background-image: url(../../../../assets/img/blogs.png);
+    // background-size: 100% 100%;
+    // height: 520px;
+    // width: 1348px;
+    background-color: black;
     .page-title-content{
-        margin-top: 30%;
+        margin-top: 10%;
     }
 }
 .galeryBtn{
