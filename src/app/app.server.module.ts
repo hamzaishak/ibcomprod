@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 import { FormsModule, NgForm, NgModel,ReactiveFormsModule, FormArray } from "@angular/forms";
 import { AppModule } from './app.module';
@@ -18,5 +18,9 @@ import { BrowserModule } from '@angular/platform-browser';
     FormsModule,
   ],
   bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
+
 export class AppServerModule {}
