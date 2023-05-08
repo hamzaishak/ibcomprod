@@ -154,7 +154,43 @@
 
         </label>
         </div> -->
+        <div class="mobileMenu">
+            <div class="btn-group dropstart">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../../../../assets/img/icons/toggle.png" alt="toggle menu">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/">Acceuil</a></li>
+                  <div class="btn-group">
+                    <span type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nos Services
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/relations-presse-et-publiques">Relations Presse et Publiques</a></li>
+                        <li><a class="dropdown-item" href="/production-audiovisuelle">Production Audiovisuelle</a></li>
+                        <li><a class="dropdown-item" href="/marketing-digital">Marketing Digital</a></li>
+                        <li><a class="dropdown-item" href="/événementiel">ÉVÉNEMENTIEL</a></li>
+                        <li><a class="dropdown-item" href="/développement-web">Développement Web</a></li>
+                        <li><a class="dropdown-item" href="/design-graphique">Design Graphique</a></li>
+                    </ul>
+                  </div>
+                  <li><a class="dropdown-item" href="/nos-clients">Clients</a></li>
+                  <li><a class="dropdown-item" href="/blog-style-2">Blog</a></li>
+                  <li><a class="dropdown-item" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div (click)="btn=true" class="toggle">
+                <img src="../../../../assets/img/icons/toggle.png" alt="toggle menu">  
+            </div> -->
+            <div *ngIf(btn)>
+                <!-- <app-toggle></app-toggle> -->
+                <p>sdfghjkl</p>
+            </div>
+        </div>
     </nav>
+    
+   
 
    
 
