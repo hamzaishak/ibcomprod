@@ -354,15 +354,162 @@
         
     }
 }
+
+//iphone8
+@media screen and (max-width: 375px){
+    .mobileBanner{
+        margin-top: 100px;
+        //margin-left: 30px;
+        width: 450px;
+    }
+
+    .type{
+        font-size: 30px;
+        font-weight: 900;
+        color: rgb(218, 5, 5);
+        margin-left: 10px;
+    }
+
+    .ann{
+        width: 400px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        animation-timing-function: linear;
+        position: relative;
+        animation-name: ann;
+        animation-duration: 3s;
+        animation-direction: normal;
+        animation-play-state: running;
+        animation-delay: 0s;
+        background-repeat:repeat;
+        animation-iteration-count: infinite;
+    }
+
+    .carousel-item{      
+        .video{
+           // width: max-content;
+           width: 67.5%;
+           height: 250px;
+            img{ width: 100%;
+                height: 100%;
+                margin-left: 12.5%;
+                border-radius: 20px;
+            }
+    
+            iframe{
+                width: 100%;
+                height: 100%;
+                margin-left: 12.5%;
+                border-radius: 20px;
+            }
+    
+        }
+    }
+   
+    @keyframes ann {
+        0%   {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+        100%   {background-color:rgb(255, 255, 255); left:0px; top:-85px;}
+    }
+
+    #playIcon{
+        position: absolute;
+        margin-top: -130px;
+        margin-left: 190px;
+    }
+
+    .carousel-indicators{
+        margin-left: 5.5%;
+     }
+ 
+     .carousel-control-prev{
+         margin-left: -2%;
+ 
+     }
+ 
+     .carousel-control-next-icon{
+         margin-left: -180%;
+         width: 500px;
+     }
+
+}
+//iphone 12 pro
+@media screen and (min-width: 376px) and (max-width: 390px){
+    .type{
+        font-size: 35px;
+        font-weight: 900;
+        color: rgb(218, 5, 5);
+        margin-left: 10px;
+    }
+
+    .ann{
+        width: 400px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        animation-timing-function: linear;
+        position: relative;
+        animation-name: ann;
+        animation-duration: 3s;
+        animation-direction: normal;
+        animation-play-state: running;
+        animation-delay: 0s;
+        background-repeat:repeat;
+        animation-iteration-count: infinite;
+    }
+
+    .mobileBanner{
+        margin-top: 100px;
+        //margin-left: 30px;
+        width: 470px;
+    }
+
+    .carousel-item{      
+        .video{
+           // width: max-content;
+           width: 67.5%;
+           height: 250px;
+            img{ width: 100%;
+                height: 100%;
+                margin-left: 12.5%;
+                border-radius: 20px;
+            }
+    
+            iframe{
+                width: 100%;
+                height: 100%;
+                margin-left: 12.5%;
+                border-radius: 20px;
+            }
+    
+        }
+    }
+
+    #playIcon{
+        position: absolute;
+        margin-top: -130px;
+        margin-left: 190px;
+    }
+    .carousel-indicators{
+        margin-left: -0%;
+        
+     }
+ 
+    .carousel-control-prev{
+        margin-left: -2%;
+     }
+ 
+    .carousel-control-next{
+        margin-left: -180%;        
+     }
+}
 //samsung
-@media only screen and (max-width: 412px){
+@media only screen and (min-width:376px) and (max-width: 414px){
     .mobileBanner{
         margin-top: 15%;
         margin-left: 0%;
     }
 
     .video{
-        img{ width: 300px;
+        img{ width: 100%;
             height: 200px;
             margin-left: 12.5%;
             border-radius: 20px;
