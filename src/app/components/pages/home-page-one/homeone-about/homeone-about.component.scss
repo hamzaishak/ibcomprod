@@ -500,6 +500,63 @@
         }
     }
 }
+//iphone8
+@media screen and (max-width: 375px){
+    .about-area{
+        width: 80%;
+        .default-btn {
+            //margin-top: 0px;
+            width: 180px;
+            height: 50px;
+           // margin-right: 20px;
+            font-size:15px;
+            display: inline-block;
+           // margin: 0 10px;
+            i{
+                width: 20px;
+            }
+        }
+    }
+}
+//iphone 12 pro
+@media screen and (min-width: 376px) and (max-width: 390px){
+    .about-area{
+        width: 80%;
+        .default-btn {
+            //margin-top: 0px;
+            width: 180px;
+            height: 50px;
+           // margin-right: 20px;
+            font-size:15px;
+            display: inline-block;
+           // margin: 0 10px;
+            i{
+                width: 20px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width: 414px){
+    .about-area{
+        width: 80%;
+        .default-btn {
+            //margin-top: 0px;
+            width: 180px;
+            height: 50px;
+           // margin-right: 20px;
+            font-size:15px;
+            display: inline-block;
+           // margin: 0 10px;
+            i{
+                width: 20px;
+            }
+        }
+
+    }
+}
+
 @media  only screen and (min-width: 413px) and (max-width: 912px){
     .about-area{
         margin-top: 0%;
