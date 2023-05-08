@@ -54,7 +54,7 @@ import { FormsModule } from '@angular/forms';
 import {CommonElementsComponent} from './components/common/common-elements/common-elements.component'
 import {GalerieComponent} from './components/pages/galerie/galerie.component';
 import {ClientsComponent} from './components/pages/clients/clients.component';
-
+import {ToggleComponent}from'./components/common/toggle/toggle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -105,6 +105,7 @@ import {ClientsComponent} from './components/pages/clients/clients.component';
       GalerieComponent,
       UserHeaderComponent,
       ClientsComponent,
+      ToggleComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
