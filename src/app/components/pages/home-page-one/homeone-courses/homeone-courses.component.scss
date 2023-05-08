@@ -317,6 +317,41 @@
         display: none;
     }
 }
+//iphone 8
+@media screen and (max-width: 375px){
+    
+    .bg{
+        background-color: black; 
+        width: 374.5px;
+    }
+    .courses-area{
+        width: 70%;
+
+    }
+}
+
+//iphone 12 pro 
+@media screen and (min-width: 376px) and (max-width: 390px){
+    .bg{
+        background-color: black; 
+        width: 374.5px;
+    }
+    .courses-area{
+        width: 70%;
+
+    }
+}
+//iphone XR
+@media only screen and (min-width:376px) and (max-width: 414px){
+    .bg{
+        background-color: black; 
+        width: 415px;
+    }
+    .courses-area{
+        width: 70%;
+
+    }
+}
 
 @media only screen and (max-width: 767px) {
 
