@@ -28,6 +28,7 @@ import {GalerieComponent} from './components/pages/galerie/galerie.component';
 import {HeaderStyleComponent} from './components/common/header-style/header-style.component';
 import {CommonElementsComponent} from './components/common/common-elements/common-elements.component';
 import {ClientsComponent} from './components/pages/clients/clients.component';
+import {ToggleComponent} from './components/common/toggle/toggle.component';
 let routes: Routes;
 routes = [
     {path: '', component: HomePageOneComponent},
@@ -58,7 +59,7 @@ routes = [
     {path: 'edit-account', component: EditAccountPageComponent},
     {path: 'blog-style-2', component: BlogRightSidebarPageComponent},
     {path: 'single-blog', component: BlogDetailsPageComponent},
-
+    {path: 'toggle', component: ToggleComponent},
     {path: 'checkout', component: CheckoutPageComponent},
     {path: 'contact', component: ContactPageComponent},
     {path: '**', component: ErrorPageComponent},
