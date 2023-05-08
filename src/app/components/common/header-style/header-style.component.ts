@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-style.component.scss']
 })
 export class HeaderStyleComponent {
+  btn:boolean=false;
 }
 
 // document.addEventListener('scroll', ()=>{
@@ -25,4 +26,4 @@ window.addEventListener('scroll', ()=>{
     navbar.classList.remove('changedBg');
   }
 });
-
+ 
