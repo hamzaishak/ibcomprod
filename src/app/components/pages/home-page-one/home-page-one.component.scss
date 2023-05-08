@@ -36,12 +36,10 @@
         margin-top: -17%;
         font-weight: bold;
 }
-
 .about{
   
   margin-top: -750px;
 }
-
 .clients{
   width: 93%;
   h3{
@@ -53,7 +51,6 @@
   margin-left: 50px;
   margin-bottom: 50px;
 }
-
 .scrollUp{
   //scroll-behavior: smooth;
   height: 30px;
@@ -88,7 +85,6 @@
 .sm{
   display: inline;
 }
-
 .scrollUp{
   scroll-behavior: smooth;
   height: 30px;
@@ -266,6 +262,12 @@ button {
 }
 
 @media only screen and  (max-width: 375px){
+    
+    .head{
+      //overflow:none;
+      display: block;
+      margin-top: 0px;
+    }
     .mobileMenu{
       margin-left: -100px;
       display: block;
@@ -376,9 +378,10 @@ button {
     .about{
         margin-top: 80px;
     }
+    .sm{
+      display: none;
+    }
 }
-
-
 
 
 @media only screen and (min-width: 376px) and (max-width: 414px){
