@@ -170,7 +170,9 @@
         }
     }
 }
-
+.bg{
+    background-color: black;
+}
 .sub-title {
     text-transform: uppercase;
     display: block;
@@ -352,14 +354,19 @@
 
     }
 }
+//mini ipad
+@media only screen and (min-width:415px) and (max-width: 768px) {
 
-@media only screen and (max-width: 767px) {
-
+    .bg{
+        background-color: black; 
+        width: 770px;
+    }
     .shorting-menu {
         text-align: center;
         margin: {
             bottom: 23px;
             top: 0;
+            
         };
         .filter {
             margin: {
@@ -402,8 +409,78 @@
             }
         }
     }
-
+    .row{
+        margin-left: 30px;
+        h3{
+            margin-left: -30px;
+        }
+    }
 }
+//ipad
+@media only screen and (min-width:769px) and (max-width: 820px){
+    .bg{
+        background-color: black; 
+        width: 820px;
+    }
+    .shorting-menu {
+        text-align: center;
+        margin: {
+            bottom: 23px;
+            top: 0;
+            
+        };
+        .filter {
+            margin: {
+                left: 8px;
+                right: 8px;
+                bottom: 12px;
+            };
+        }
+    }
+    .single-courses-box {
+        .courses-image {
+            .courses-tag {
+                right: 20px;
+                font-size: 13px;
+            }
+        }
+        .courses-content {
+            padding: 20px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+        .courses-box-footer {
+            padding: 20px;
+            text-align: center;
+
+            ul {
+                li {
+                    i {
+                        top: 0;
+                        display: block;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                    }
+                }
+                .courses-price {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .row{
+        width: 700px;
+        margin-left: 0px;
+        h3{
+            margin-left: -30px;
+            font-size: 30px;
+            font-weight: 200;
+        }
+    }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
 }
