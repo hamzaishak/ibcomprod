@@ -345,3 +345,12 @@
         display: block;
     }
 }
+
+@media only screen and (min-width:415px) and (max-width: 768px){
+    .footer-area{
+        width: 99.999999%;
+        #contact{
+            margin-left: 0px;
+        }
+    }
+}
